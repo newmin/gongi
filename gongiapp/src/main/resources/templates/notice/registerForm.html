@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글쓰기</title>
+</head>
+<body>
+	<h1>글쓰기</h1>
+	<hr />
+  <form action="/notice/register" method="post">
+  	<label for="">작가<input id="writer" name="writer" type="text" required/></label>
+  	<label for="">제목<input id="title" name="title" type="text" required/></label>
+  	<label for="">내용<input id="content" name="content" type="text" required/></label>
+  	<button>제출</button>
+  </form>
+</body>
+</html>

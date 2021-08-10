@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글내용</title>
+</head>
+<body>
+  <h1>게시글 페이지 양식</h1>
+  <hr />
+    <ul th:object=${noticeDTO}>
+      <li><p>작가</p><input type="text" th:field="writer" th:value="*{writer}" readonly></textarea></li>
+      <li><p>제목</p><input type="text" th:field="title" th:value="*{title}" readonly></li>
+      <li><p>내용</p><input type="text" th:field="content" th:value="*{content}" readonly></li>
+    </ul>
+</body>
+</html>
