@@ -28,17 +28,17 @@ public class SelectPKAfterInsert {
 		
 		KeyHolder keyholder = new GeneratedKeyHolder();
 		
-		jt.update(new PreparedStatementCreator() {
+//		jt.update(new PreparedStatementCreator() {
 			
-			@Override
-			public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
-				PreparedStatement pstmt = con.prepareStatement(sql,new String[] {"nnum"});
-				pstmt.setString(1,"작성자2");
-				pstmt.setString(2,"제목2");
-				pstmt.setString(3,"내용2");
-				return pstmt;
-			}
-		},keyholder);
+//			@Override
+//			public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+//				PreparedStatement pstmt = con.prepareStatement(sql,new String[] {"nnum"});
+//				pstmt.setString(1,"작성자2");
+//				pstmt.setString(2,"제목2");
+//				pstmt.setString(3,"내용2");
+//				return pstmt;
+//			}
+//		},keyholder);
 		
 		
 		
